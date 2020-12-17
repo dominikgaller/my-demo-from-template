@@ -1,0 +1,43 @@
+:jbake-title: Ein paar Tests
+:jbake-date: 2020-12-16
+:jbake-type: post
+:jbake-tags: blog, asciidoc, plantuml
+:jbake-status: published
+
+= Ein paar Tests
+Ralf D. Müller
+2020-12-15
+
+Dieser Blog-Eintrag dient nur dazu ein paar Dinge des Systems zu testen.
+
+:icons: font
+
+WARNING: Admonitions should have font icons
+
+.tables - a no-brainer
+|===
+| Header Cell 1 | Header Cell 2
+
+| Row 1 Cell 1
+| Row 1 Cell 2
+
+| Row 2 Cell 1
+| Row 2 Cell 2
+|===
+
+.plantuml without graphviz
+[plantuml]
+----
+Reader -> Website
+    Website -> Repository
+    Website <-- Repository
+Reader <-- Website
+----
+
+.plantuml with graphviz
+[plantuml]
+----
+[a]->[b]
+[b]-->[c]: benutzt
+[c]->[a]
+----

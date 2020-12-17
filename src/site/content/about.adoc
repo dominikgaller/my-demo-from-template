@@ -1,0 +1,15 @@
+:jbake-title: About
+:jbake-type: page
+:jbake-status: published
+
+include::../../../README.adoc[tags=about]
+
+'''
+
+include::../../doc/chapters/about-arc42.adoc[]
+
+'''
+
+The source of this microsite can be found at https://github.com/docToolchain/arc42-template-project .
+
+

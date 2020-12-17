@@ -1,0 +1,52 @@
+//tag::about[]
+
+== arc42 Project Template
+
+This is a template for a Java/arc42 documentation project.
+
+A demo for the deployed microsite of the documentation template can be found at https://arc42-demo.netlify.app/
+
+=== Tech-Stack
+
+This repository was build was with/uses the following technology stack.
+
+Groovy is only optional for demonstration purpose.
+It show how to mix a Hello-World app with documentation in one Repository.
+
+[cols="2"]
+|===
+| Gradle
+| 6.7.1
+
+| JVM
+| 15.0.1 (Oracle Corporation 15.0.1+9-18)
+
+| jBake
+| 2.6.5
+
+| twitter-bootstrap
+| 5.0.0-beta
+
+| arc42
+| 7.0DE
+
+| Groovy
+| 2.5.12
+|===
+
+//end::about[]
+
+=== How to build with Gradle
+
+use `./gradlew bake` to build the site and `./gradlew bakePreview` to start a little webserver.
+
+=== How to build and run with JBake
+
+.Install jbake with SDKMan
+[source,sh]
+----
+sdk install jbake
+jbake src/site build/jbake -b -s
+----
+
+TIP: jBake as CLI tool will not render plantUML diagrams.
